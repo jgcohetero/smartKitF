@@ -3,19 +3,207 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="background">
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+    <ion-fab-button color="secondary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab> <!--Boton flotante de para agregar cuartos-->
+
+  <!-- <br>
+  
+  <ion-card>
+    <ion-card-content routerLink="/rooms">
+      <img class="img1" src="assets\img\sofa.png">
+      <h4 class="text2 ion-text-center">No hay Habitaciones Añadidas</h4>
+    </ion-card-content>
+  </ion-card> -->
+  <!--Card con contenido si no hay Sensores añadidos-->
+
+<!-- <ion-text>
+  <h3 class="ion-padding ion-padding-horizontal ion-padding-start">¡Aún no hay Dispositivos!</h3>
+  <h5 class="ion-text-justify ion-padding-horizontal">Añade tus dispositivos al tocar el botón en la parte
+    superior derecha. Los dispositivos que guardes se incluirán aquí.
+  </h5>
+</ion-text> -->
+<!--Texto cuando no hay cuartos añadidos-->
+
+
+<!-- <ion-card>
+  <ion-card-content routerLink="/rooms">
+    <h4>Cocina<i class="fa fa-chevron-right" aria-hidden="true" slot="end"></i>
+  </h4>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <h4>Cocina<i class="fa fa-chevron-right" aria-hidden="true" slot="end"></i>
+  </h4>
+  </ion-card-content>
+</ion-card> -->
+
+<!-- <ion-card>
+  <ion-card-content routerLink="/rooms">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <h4>Cocina</h4>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <i class="fa fa-chevron-right" aria-hidden="true" slot="end"></i>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content routerLink="/rooms">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <h4>Baño</h4>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <i class="fa fa-chevron-right" aria-hidden="true" slot="end"></i>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card> -->
+
+  <!-- <div class="container">
+    <div class="row">
+      <img class="rounded mx-auto d-block"
+        src="https://image.freepik.com/free-vector/smarthome-illustration-collection_2825-90.jpg" alt="" />
+       <h1 class="ion-text-center Bu">Bienvenido: Roberto</h1>
+    </div>
+  </div> --> <!--Imagen de Inicio en Home-->
+
+  <ion-card class="card1" routerLink="/temperatura">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <!-- <ion-fab vertical="end" vertical="center" slot="fixed">
+                <ion-fab-button color="danger">
+                  <ion-icon name="thermometer"></ion-icon>
+                </ion-fab-button>
+              </ion-fab> -->
+              <img class="img2" src="https://image.flaticon.com/icons/svg/1684/1684374.svg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h4 class="ion-text-center text1">Temperatura & Humedad</h4>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card routerLink="/aire">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <!-- <ion-fab vertical="end" vertical="center" slot="fixed">
+                <ion-fab-button color="danger">
+                  <ion-icon name="thermometer"></ion-icon>
+                </ion-fab-button>
+              </ion-fab> -->
+              <img class="img2" src="https://image.flaticon.com/icons/svg/1458/1458984.svg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h4 class="ion-text-center text1">Calidad del Aire</h4>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card routerLink="/alert">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <!-- <ion-fab vertical="end" vertical="center" slot="fixed">
+                <ion-fab-button color="danger">
+                  <ion-icon name="thermometer"></ion-icon>
+                </ion-fab-button>
+              </ion-fab> -->
+              <img class="img2" src="https://image.flaticon.com/icons/svg/427/427735.svg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h4 class="ion-text-center text2">Alarma de Sismo</h4>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card routerLink="/movimiento">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <!-- <ion-fab vertical="end" vertical="center" slot="fixed">
+                <ion-fab-button color="danger">
+                  <ion-icon name="thermometer"></ion-icon>
+                </ion-fab-button>
+              </ion-fab> -->
+              <img class="img2" src="https://image.flaticon.com/icons/svg/2622/2622632.svg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <h4 class="ion-text-center text2">Alarma de Movimiento</h4>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab routerLink="/configuracion" horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark">
+      <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+    </ion-fab-button>
+  </ion-fab>
+  
 </ion-content>
